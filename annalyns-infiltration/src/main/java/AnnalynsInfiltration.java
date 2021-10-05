@@ -1,6 +1,6 @@
 class AnnalynsInfiltration {
     public static boolean canFastAttack(boolean knightIsAwake) {
-        throw new UnsupportedOperationException("Please implement the (static) AnnalynsInfiltration.canFastAttack() method");
+        return !knightIsAwake;
     }
 
     public static boolean canSpy(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake) {

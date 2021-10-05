@@ -10,14 +10,12 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_execute_fast_attack_if_knight_is_sleeping() {
         boolean knightIsAwake = false;
         assertThat(AnnalynsInfiltration.canFastAttack(knightIsAwake)).isTrue();
     }
 
     @Test
-    @Ignore
     public void cannot_spy_if_everyone_is_sleeping() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = false;
@@ -26,7 +24,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_everyone_but_knight_is_sleeping() {
         boolean knightIsAwake = true;
         boolean archerIsAwake = false;
@@ -35,7 +32,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_everyone_but_archer_is_sleeping() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = true;
@@ -44,7 +40,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_everyone_but_prisoner_is_sleeping() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = false;
@@ -53,7 +48,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_only_knight_is_sleeping() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = true;
@@ -62,7 +56,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_only_archer_is_sleeping() {
         boolean knightIsAwake = true;
         boolean archerIsAwake = false;
@@ -71,7 +64,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_only_prisoner_is_sleeping() {
         boolean knightIsAwake = true;
         boolean archerIsAwake = true;
@@ -80,7 +72,6 @@ public class AnnalynsInfiltrationTest {
     }
 
     @Test
-    @Ignore
     public void can_spy_if_everyone_is_awake() {
         boolean knightIsAwake = true;
         boolean archerIsAwake = true;

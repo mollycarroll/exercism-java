@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LasagnaTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-10-05T19:09:03" hostname="Mollys-MBP" time="0.03">
+<testsuite name="LasagnaTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-10-05T19:28:21" hostname="Mollys-MBP" time="0.031">
   <properties/>
-  <testcase name="total_time_in_minutes_for_multiple_layers" classname="LasagnaTest" time="0.028"/>
-  <testcase name="total_time_in_minutes_for_one_layer" classname="LasagnaTest" time="0.001"/>
+  <testcase name="total_time_in_minutes_for_multiple_layers" classname="LasagnaTest" time="0.029"/>
+  <testcase name="total_time_in_minutes_for_one_layer" classname="LasagnaTest" time="0.0"/>
   <testcase name="remaining_minutes_in_oven" classname="LasagnaTest" time="0.0"/>
   <testcase name="preparation_time_in_minutes_for_one_layer" classname="LasagnaTest" time="0.0"/>
   <testcase name="expected_minutes_in_oven" classname="LasagnaTest" time="0.0"/>
-  <testcase name="preparation_time_in_minutes_for_multiple_layers" classname="LasagnaTest" time="0.0"/>
+  <testcase name="preparation_time_in_minutes_for_multiple_layers" classname="LasagnaTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

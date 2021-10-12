@@ -11,11 +11,15 @@ class BirdWatcher {
     }
 
     public int getToday() {
-        throw new UnsupportedOperationException("Please implement the BirdCount.getToday() method");
+        if (birdsPerDay.length == 7) {
+            return birdsPerDay[6];
+        } else {
+            return 0;
+        }
     }
 
     public void incrementTodaysCount() {
-        throw new UnsupportedOperationException("Please implement the BirdCount.incrementTodaysCount() method");
+        birdsPerDay[6] = birdsPerDay[6] + 1;
     }
 
     public boolean hasDayWithoutBirds() {

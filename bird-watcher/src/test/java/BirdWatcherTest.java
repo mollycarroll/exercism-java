@@ -30,13 +30,11 @@ public class BirdWatcherTest {
     }
 
     @Test
-    @Ignore("Remove to run test")
     public void itTestGetToday() {
         assertThat(birdWatcher.getToday()).isEqualTo(TODAY);
     }
 
     @Test
-    @Ignore("Remove to run test")
     public void itShouldReturnZeroIfBirdWatcherLastWeekIsEmpty() {
         int[] lastWeekEmpty = new int[0];
         birdWatcher = new BirdWatcher(lastWeekEmpty);
@@ -44,7 +42,6 @@ public class BirdWatcherTest {
     }
 
     @Test
-    @Ignore("Remove to run test")
     public void itIncrementTodaysCount() {
         birdWatcher.incrementTodaysCount();
         assertThat(birdWatcher.getToday()).isEqualTo(TODAY + 1);

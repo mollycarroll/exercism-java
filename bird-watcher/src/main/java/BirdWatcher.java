@@ -23,14 +23,35 @@ class BirdWatcher {
     }
 
     public boolean hasDayWithoutBirds() {
-        throw new UnsupportedOperationException("Please implement the BirdCount.hasDayWithoutBirds() method");
+        for (int birdCount:birdsPerDay) {
+            if (birdCount == 0) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        throw new UnsupportedOperationException("Please implement the BirdCount.getCountForFirstDays() method");
+        int total = 0;
+        if (birdsPerDay.length < numberOfDays) {
+            for (int b = 0; b < birdsPerDay.length; b++) {
+                total += birdsPerDay[b];
+            }
+        } else {
+            for (int i = 0; i < numberOfDays; i++) {
+                total += birdsPerDay[i];
+            }
+        }
+        return total;
     }
 
     public int getBusyDays() {
-        throw new UnsupportedOperationException("Please implement the BirdCount.getBusyDays() method");
+        int busyDays = 0;
+        for (int birdCount:birdsPerDay) {
+            if (birdCount >= 5) {
+                busyDays += 1;
+            }
+        }
+        return busyDays;
     }
 }

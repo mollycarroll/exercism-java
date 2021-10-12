@@ -7,7 +7,7 @@ class BirdWatcher {
     }
 
     public int[] getLastWeek() {
-        throw new UnsupportedOperationException("Please implement the BirdCount.getLastWeek() method");
+        return birdsPerDay;
     }
 
     public int getToday() {

@@ -20,3 +20,5 @@ _template/bin
 _template/.classpath
 _template/.project
 _template/.settings/
+gradle/
+gradlew*

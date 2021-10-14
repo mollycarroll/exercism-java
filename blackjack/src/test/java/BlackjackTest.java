@@ -20,31 +20,26 @@ public class BlackjackTest {
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesTwo () {
         assertThat(blackjack.parseCard("two")).isEqualTo(2);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesThree () {
         assertThat(blackjack.parseCard("three")).isEqualTo(3);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesFour () {
         assertThat(blackjack.parseCard("four")).isEqualTo(4);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesFive () {
         assertThat(blackjack.parseCard("five")).isEqualTo(5);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesSix () {
         assertThat(blackjack.parseCard("six")).isEqualTo(6);
     }
@@ -56,98 +51,82 @@ public class BlackjackTest {
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesEight () {
         assertThat(blackjack.parseCard("eight")).isEqualTo(8);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesNine () {
         assertThat(blackjack.parseCard("nine")).isEqualTo(9);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesTen () {
         assertThat(blackjack.parseCard("ten")).isEqualTo(10);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesJack () {
         assertThat(blackjack.parseCard("jack")).isEqualTo(10);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesQueen () {
         assertThat(blackjack.parseCard("queen")).isEqualTo(10);
     }
 
     @Test
-    @Ignore("Remove to run the test")
     public void correctParsesKing () {
         assertThat(blackjack.parseCard("king")).isEqualTo(10);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void blackjackWithTenAceSecond() {
         assertThat(blackjack.isBlackjack("ten", "ace")).isEqualTo(true);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void blackjackWithJackAceSecond() {
         assertThat(blackjack.isBlackjack("jack", "ace")).isEqualTo(true);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void blackjackWithQueenAceSecond() {
         assertThat(blackjack.isBlackjack("queen", "ace")).isEqualTo(true);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void blackjackWithKingAceSecond() {
         assertThat(blackjack.isBlackjack("king", "ace")).isEqualTo(true);
     }   
     
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithFive() {
         assertThat(blackjack.isBlackjack("ace", "five")).isEqualTo(false);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithNine() {
         assertThat(blackjack.isBlackjack("ace", "nine")).isEqualTo(false);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithTwoAces() {
         assertThat(blackjack.isBlackjack("ace", "ace")).isEqualTo(false);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithTwoFigures() {
         assertThat(blackjack.isBlackjack("queen", "jack")).isEqualTo(false);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithKingAndFive() {
         assertThat(blackjack.isBlackjack("king", "five")).isEqualTo(false);
     }
     
     @Test
-    @Ignore("Remove to run the test")
     public void noBlackjackWithEightAndFive() {
         assertThat(blackjack.isBlackjack("eight", "five")).isEqualTo(false);
     }

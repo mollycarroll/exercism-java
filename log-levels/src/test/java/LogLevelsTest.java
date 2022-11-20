@@ -4,6 +4,7 @@ import org.junit.Ignore;
 import static org.assertj.core.api.Assertions.*;
 
 public class LogLevelsTest {
+    @Ignore("Remove to run test")
     @Test
     public void error_message() {
         assertThat(LogLevels.message("[ERROR]: Stack overflow")).isEqualTo("Stack overflow");

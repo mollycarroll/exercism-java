@@ -22,3 +22,5 @@ _template/.project
 _template/.settings/
 gradle/
 gradlew*
+**/.gradle
+**/build
